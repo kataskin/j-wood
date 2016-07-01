@@ -1,0 +1,85 @@
+.about-me {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+.about-me__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding-bottom: 100px;
+  @media @desktop-max-widths {
+    margin-top: 75px;
+  }
+}
+
+.about-me__photo-container {
+  text-align: center;
+  @media (min-width: 750px) {
+    width: 291px;
+    margin-right: 50px;
+  }
+  @media @desktop-widths {
+    width: 50%;
+  }
+}
+
+.about-me__photo {
+  display: none;
+  @media (min-width: 750px) {
+    display: inline;
+    width: 291px;
+    height: auto;
+  }
+  @media @desktop-widths {
+    width: 90%;
+  }
+}
+
+.about-me__text {
+  max-width: 680px;
+  @media @desktop-max-widths {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.about-me__title {
+  margin: 0;
+  font-family: "Nexa Light", sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  color: #202020;
+  @media @tablet-widths {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @media @desktop-widths {
+    font-size: 60px;
+    line-height: 120px;
+  }
+}
+
+.about-me__short-story {
+  margin: 10px 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #202020;
+  text-transform: none;
+  @media @tablet-widths {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  @media @desktop-max-widths {
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+.about-me__signature {
+  margin-top: 20px;
+}

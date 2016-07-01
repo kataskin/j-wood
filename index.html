@@ -2,43 +2,55 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>J-WOOD</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <section class="promo">
+    <section class="promo" id="promo">
       <div class="promo__wrapper">
-        <header class="section-header">
+        <a href="#" class="section-header__icon-nav"></a>
+        <header class="section-header section-header--main">
           <nav class="section-header__nav">
-            <a href="#" class="section-header__nav-link">Home</a>
-            <a href="#" class="section-header__nav-link">About me</a>
-            <a href="#" class="section-header__nav-link">Portfolio</a>
-            <a href="#" class="section-header__nav-link">Contact</a>
+            <a class="section-header__nav-link">Home</a>
+            <a href="#about-me" class="section-header__nav-link">About me</a>
+            <a href="#portfolio" class="section-header__nav-link">Portfolio</a>
+            <a href="#contacts" class="section-header__nav-link">Contact</a>
           </nav>
         </header>
-        <div class="promo__logo"></div>
-        <h2 class="promo__title">JWOODPHOTOGRAPHY</h2>
+        <div class="promo__logo">
+          <img src="img/logo/logo.png" class="promo__logo-img" alt="Logo"
+            width="473" height="474">
+        </div>
+        <h2 class="promo__title">
+          <span class="promo__title-name">JWOOD</span>
+          <span class="promo__title-profession">PHOTOGRAPHY</span>
+        </h2>
         <div class="scroll-down">
-          <span class="scroll-down__text">
+          <a href="#about-me" class="scroll-down__text">
             Scroll down to see more
-          </span>
-          <a href="#" class="scroll-down__link"></a>
+          </a>
+          <a href="#about-me" class="scroll-down__link"></a>
         </div>
       </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="about-me__wrapper">
-        <header class="section-header">
+        <header class="section-header section-header--light-bg">
           <nav class="section-header__nav">
-            <a href="#" class="section-header__nav-link">Home</a>
-            <a href="#" class="section-header__nav-link">About me</a>
-            <a href="#" class="section-header__nav-link">Portfolio</a>
-            <a href="#" class="section-header__nav-link">Contact</a>
+            <a href="#promo" class="section-header__nav-link">Home</a>
+            <a class="section-header__nav-link">About me</a>
+            <a href="#portfolio" class="section-header__nav-link">Portfolio</a>
+            <a href="#contacts" class="section-header__nav-link">Contact</a>
           </nav>
         </header>
         <div class="about-me__content">
-          <img src="img/photo/JasonWood.jpg" class="about-me__photo"
-            alt="my-photo" width="771" height="700">
+          <picture class="about-me__photo-container">
+            <source srcset="img/photo/JasonWood.jpg" media="(min-width: 1200px)">
+            <source srcset="img/photo/JasonWood-tablet.jpg" media="(min-width: 750px)">
+            <img src="img/photo/JasonWood.jpg" class="about-me__photo"
+              alt="my-photo">
+          </picture>
           <div class="about-me__text">
             <h2 class="about-me__title">
               About me
@@ -58,21 +70,21 @@
           </div>
         </div>
         <div class="scroll-down">
-          <span class="scroll-down__text">
+          <a href="#portfolio" class="scroll-down__text scroll-down__text--even">
             keep scrolling, there is still more to come.
-          </span>
-          <a href="#" class="scroll-down__link"></a>
+          </a>
+          <a href="#portfolio" class="scroll-down__link scroll-down__link--even"></a>
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio__wrapper">
         <header class="section-header">
           <nav class="section-header__nav">
-            <a href="#" class="section-header__nav-link">Home</a>
-            <a href="#" class="section-header__nav-link">About me</a>
-            <a href="#" class="section-header__nav-link">Portfolio</a>
-            <a href="#" class="section-header__nav-link">Contact</a>
+            <a href="#promo" class="section-header__nav-link">Home</a>
+            <a href="#about-me" class="section-header__nav-link">About me</a>
+            <a class="section-header__nav-link">Portfolio</a>
+            <a href="#contacts" class="section-header__nav-link">Contact</a>
           </nav>
         </header>
         <h2 class="portfolio__title">portfolio</h2>
@@ -120,21 +132,21 @@
 
         </div>
         <div class="scroll-down">
-          <span class="scroll-down__text">
+          <a href="#contacts" class="scroll-down__text">
             do you want to see it with your own eyes? Scroll!
-          </span>
-          <a href="#" class="scroll-down__link"></a>
+          </a>
+          <a href="#contacts" class="scroll-down__link"></a>
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__wrapper">
-        <header class="section-header">
+        <header class="section-header section-header--light-bg">
           <nav class="section-header__nav">
-            <a href="#" class="section-header__nav-link">Home</a>
-            <a href="#" class="section-header__nav-link">About me</a>
-            <a href="#" class="section-header__nav-link">Portfolio</a>
-            <a href="#" class="section-header__nav-link">Contact</a>
+            <a href="#promo" class="section-header__nav-link">Home</a>
+            <a href="#about-me" class="section-header__nav-link">About me</a>
+            <a href="#portfolio" class="section-header__nav-link">Portfolio</a>
+            <a class="section-header__nav-link">Contact</a>
           </nav>
         </header>
         <div class="contacts__content">
@@ -149,10 +161,14 @@
             <a href="#" class="contacts__social-item contacts__social-item--inst"></a>
           </div>
         </div>
-        <footer class="contacts__footer">
-          DESIGNED by Pawel szymankiewicz
-        </footer>
+        <div class="contacts__footer">
+            DESIGNED by Pawel szymankiewicz
+        </div>
       </div>
     </section>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollto.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

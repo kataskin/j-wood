@@ -1,0 +1,45 @@
+.portfolio {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: #09110e url("../img/bg/background2-mobile.jpg") top center repeat;
+  @media @tablet-widths {
+    background: #09110e url("../img/bg/background2-tablet.jpg") top center repeat;
+  }
+  @media @desktop-widths {
+    background: #09110e url("../img/bg/background2.jpg") center center repeat;
+  }
+}
+
+.portfolio__title {
+  text-align: center;
+  font-family: "Nexa Light", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  @media @tablet-widths {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.portfolio__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 90px;
+}
+
+.portfolio__photo-link {
+  width: 279px;
+  margin: 10px;
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.portfolio__photo-img {
+  width: 100%;
+  height: auto;
+}
